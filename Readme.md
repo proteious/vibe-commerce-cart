@@ -1,48 +1,87 @@
-Vibe Commerce - Full Stack Shopping Cart
-A modern full-stack e-commerce shopping cart application built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring a sleek dark UI and complete shopping functionality.
+# Vibe Commerce - Full Stack Shopping Cart
 
-Features
-✅ Product Listing - Browse 8 products with images, descriptions, and prices
-✅ Shopping Cart - Add, remove, and update item quantities
-✅ Cart Management - Real-time cart total calculation
-✅ Checkout Flow - Customer information form with validation
-✅ Order Receipt - Mock checkout with order confirmation
-✅ Database Persistence - MongoDB integration for products and cart
-✅ RESTful API - Complete backend with 5 endpoints
-✅ Modern Dark UI - Professional design with smooth animations
-✅ Responsive Design - Works on all devices
+A modern, full-stack e-commerce shopping cart built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring a sleek dark UI and complete shopping functionality.
 
-Tech Stack
-Frontend: React 18, Vite, Axios, CSS-in-JS
-Backend: Node.js, Express.js, MongoDB, Mongoose, CORS
-Database: MongoDB Atlas (Cloud)
+---
 
-Project Structure
-text
+## 🎯 **Features**
+
+### ✅ **All Requirements Met:**
+- **Product Listing**: Browse 8 products with images, descriptions, prices
+- **Shopping Cart**: Add, remove, and update item quantities
+- **Cart Management**: Real-time cart total calculation
+- **Checkout Flow**: Customer information form with validation
+- **Order Receipt**: Mock checkout with order confirmation and receipt
+- **Database Persistence**: MongoDB integration for cart and products
+- **RESTful API**: Complete backend API with 5 endpoints
+- **Modern UI**: Dark theme with professional typography and design
+
+---
+
+## 🛠️ **Tech Stack**
+
+**Frontend:**
+- React 18 with Vite
+- Axios for API communication
+- CSS-in-JS for styling
+- Responsive design
+
+**Backend:**
+- Node.js & Express.js
+- MongoDB with Mongoose ODM
+- RESTful API architecture
+- CORS enabled
+- Environment variables with dotenv
+
+**Database:**
+- MongoDB Atlas (Cloud database)
+
+---
+
+## 📁 **Project Structure**
+
 vibe-commerce-cart/
+│
 ├── backend/
-│   ├── models/
-│   │   ├── Product.js
-│   │   └── Cart.js
-│   ├── routes/
-│   │   ├── products.js
-│   │   ├── cart.js
-│   │   └── checkout.js
-│   ├── .env
-│   ├── server.js
-│   └── package.json
-└── frontend/
-    ├── src/
-    │   ├── api/
-    │   │   └── api.js
-    │   ├── components/
-    │   │   ├── ProductCard.jsx
-    │   │   ├── Cart.jsx
-    │   │   ├── CheckoutModal.jsx
-    │   │   └── ReceiptModal.jsx
-    │   ├── App.jsx
-    │   └── main.jsx
-    └── package.json
+│ ├── models/
+│ │ ├── Product.js # Product schema with Mongoose
+│ │ └── Cart.js # Cart item schema
+│ │
+│ ├── routes/
+│ │ ├── products.js # Product API endpoints
+│ │ ├── cart.js # Cart management endpoints
+│ │ └── checkout.js # Checkout and receipt endpoint
+│ │
+│ ├── .env # Environment variables (MongoDB URI, PORT)
+│ ├── server.js # Express server setup and configuration
+│ └── package.json # Backend dependencies
+│
+├── frontend/
+│ ├── src/
+│ │ ├── api/
+│ │ │ └── api.js # API service layer for backend calls
+│ │ │
+│ │ ├── components/
+│ │ │ ├── ProductCard.jsx # Individual product display component
+│ │ │ ├── Cart.jsx # Shopping cart view component
+│ │ │ ├── CheckoutModal.jsx # Checkout form modal
+│ │ │ └── ReceiptModal.jsx # Order confirmation modal
+│ │ │
+│ │ ├── App.jsx # Main application component
+│ │ └── main.jsx # React entry point
+│ │
+│ └── package.json # Frontend dependencies
+│
+├── screenshots/
+│ ├── Products.png # Products page screenshot
+│ ├── Cart.png # Shopping cart screenshot
+│ ├── Cart2.png # Cart quantity controls screenshot
+│ ├── Checkout.png # Checkout form screenshot
+│ └── Receipt.png # Order receipt screenshot
+│
+├── .gitignore # Git ignore file
+└── README.md # Project documentation
+
 Setup Instructions
 Prerequisites
 Node.js v16 or higher
