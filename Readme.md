@@ -221,7 +221,7 @@ vite: ^4.3.9
 
 
 Demo Video
-(https://www.loom.com/share/c420b15be8044366b7c4920479718d49?t=52)
+https://www.loom.com/share/c420b15be8044366b7c4920479718d49?t=52
 
 Developer
 Assignment: Vibe Commerce Full Stack Developer Internship
